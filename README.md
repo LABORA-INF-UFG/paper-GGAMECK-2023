@@ -20,8 +20,9 @@ In our theorical evaluation we assume as RAN topology a next-generation hierarch
 
 We first investigate the optimization model scalability, showing that the exact model takes a long time to find the optimal solution, and in cases with a larger number of nodes, the exact model fails to complete the search. On the other hand, our heuristic strategy is very efficient and presents high quality solutions, however, with no guarantee of optimality.
 
+<p align="center">
 ![image](https://user-images.githubusercontent.com/15385171/218474929-413d8515-5838-4243-bbce-6bbf6e44eba1.png)
-
+</p>
 
 ## Real-world experiments
 
