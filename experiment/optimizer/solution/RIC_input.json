@@ -1,0 +1,21 @@
+{
+  "DELAY_RIC_E2": 10,
+  "DELAY_RIC_DU": 10,
+  "DELAY_RIC_SDL": 10,
+  "CPU_RIC": 0.006,
+  "CPU_E2": 0.002,
+  "CPU_SDL": 0.005,
+  "MEM_RIC": 2.4,
+  "MEM_E2": 0.02,
+  "MEM_SDL": 0.01,
+  "DB_STORAGE": 50,
+  "CPU_DB": 0,
+  "MEM_DB": 0,
+  "N_XAPPS": 1,
+  "XAPPS_CHAIN": {"1": 0},
+  "TOTAL_XAPPS_CHAIN": {"1": []},
+  "CPU_XAPPS": {"1": 0.002},
+  "MEM_XAPPS": {"1": 0.02},
+  "SDL_ACCESS": {"1": 0},
+  "xApps_HEAD": {"1": 1}
+}

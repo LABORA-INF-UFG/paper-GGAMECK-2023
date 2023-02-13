@@ -1,0 +1,4 @@
+kubernetes==24.2.0
+prometheus-api-client==0.5.1
+Flask==1.1.1
+docplex==2.23.222

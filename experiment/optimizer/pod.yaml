@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: optimizer-optimal
+spec:
+  containers:
+  - name: optimizer-optimal
+    image: zanattabruno/optimizer-optimal
+    args:
+    - sleep
+    - "1000000"
+    imagePullPolicy: Always

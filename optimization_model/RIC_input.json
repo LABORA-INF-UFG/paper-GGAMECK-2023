@@ -1,0 +1,16 @@
+{
+  "DELAY_RIC_E2": 100,
+  "DELAY_RIC_DU": 100,
+  "DELAY_RIC_SDL": 100,
+  "CPU_RIC": 2,
+  "CPU_E2": 2,
+  "CPU_SDL": 1,
+  "DB_STORAGE": 1,
+  "CPU_DB": 1,
+  "N_XAPPS": 2,
+  "XAPPS_CHAIN": {"1": 0, "2": 0},
+  "TOTAL_XAPPS_CHAIN": {"1": [], "2": []},
+  "CPU_XAPPS": {"1": 1, "2": 1},
+  "SDL_ACCESS": {"1": 1, "2": 1},
+  "xApps_HEAD": {"1": 1, "2": 1}
+}

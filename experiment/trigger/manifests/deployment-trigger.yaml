@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-trigger
+  namespace: ricinfra
+  labels:
+    app: trigger
+spec:
+  selector:
+    matchLabels:
+      app: trigger
+  template:
+    metadata:
+      labels:
+        app: trigger
+    spec:
+      containers:
+      - name: trigger
+        image: zanattabruno/trigger
+        ports:
+        - containerPort: 5000
+          name: flask-default

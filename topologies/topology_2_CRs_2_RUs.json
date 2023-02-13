@@ -1,0 +1,63 @@
+{
+  "links": [
+    {
+      "link": "(0, 1)",
+      "delay": 4
+    },
+    {
+      "link": "(0, 2)",
+      "delay": 4
+    },
+    {
+      "link": "(1, 2)",
+      "delay": 1.72
+    }
+  ],
+  "CRs": [
+    {
+      "id": 0,
+      "cpu": 99999999,
+      "storage": 99999999,
+      "fixed_cost": 0,
+      "RIC_cost": 2,
+      "E2_cost": 2,
+      "SDL_cost": 1,
+      "DB_cost": 1,
+      "xApp_cost": 1
+    },
+    {
+      "id": 1,
+      "cpu": 32,
+      "storage": 512,
+      "fixed_cost": 10,
+      "RIC_cost": 4,
+      "E2_cost": 4,
+      "SDL_cost": 2,
+      "DB_cost": 2,
+      "xApp_cost": 1
+    },
+    {
+      "id": 2,
+      "cpu": 32,
+      "storage": 512,
+      "fixed_cost": 10,
+      "RIC_cost": 4,
+      "E2_cost": 4,
+      "SDL_cost": 2,
+      "DB_cost": 2,
+      "xApp_cost": 1
+    }
+  ],
+  "DUs": [
+    {
+      "id": 1,
+      "CR": 1,
+      "closest_CR": 1
+    },
+    {
+      "id": 2,
+      "CR": 2,
+      "closest_CR": 2
+    }
+  ]
+}

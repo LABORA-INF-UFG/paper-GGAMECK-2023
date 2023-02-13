@@ -1,0 +1,29 @@
+2022-11-09T17:28:27.117156000Z  * Serving Flask app "optimizer" (lazy loading)
+2022-11-09T17:28:27.117537281Z  * Environment: production
+2022-11-09T17:28:27.117623474Z    WARNING: This is a development server. Do not use it in a production deployment.
+2022-11-09T17:28:27.117721208Z    Use a production WSGI server instead.
+2022-11-09T17:28:27.117730690Z  * Debug mode: on
+2022-11-09T17:28:27.142704214Z /usr/local/lib/python3.6/site-packages/pandas/compat/__init__.py:120: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+2022-11-09T17:28:27.142743343Z   warnings.warn(msg)
+2022-11-09T17:28:27.142749858Z  * Running on all addresses.
+2022-11-09T17:28:27.142755295Z    WARNING: This is a development server. Do not use it in a production deployment.
+2022-11-09T17:28:27.142836695Z  * Running on http://10.233.90.83:5000/ (Press CTRL+C to quit)
+2022-11-09T17:28:27.144404413Z  * Restarting with stat
+2022-11-09T17:28:29.341259166Z /usr/local/lib/python3.6/site-packages/pandas/compat/__init__.py:120: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+2022-11-09T17:28:29.341288231Z   warnings.warn(msg)
+2022-11-09T17:28:29.341294612Z  * Debugger is active!
+2022-11-09T17:28:29.348618242Z  * Debugger PIN: 887-470-639
+2022-11-09T17:35:06.339845092Z Call optimal optimization
+2022-11-09T17:35:06.339887376Z Optimization start
+2022-11-09T17:35:06.339894533Z Running...
+2022-11-09T17:35:06.339900617Z -----------------------------------------------------------------------------------------------------------
+2022-11-09T17:35:07.462606497Z 10.233.90.70 - - [09/Nov/2022 17:35:07] "GET /optimizer-optimal HTTP/1.1" 200 -
+2022-11-09T17:37:36.920622530Z Alocation Time: 0.39530301094055176
+2022-11-09T17:37:36.920657683Z Solver Enlapsed Time: 0.8397490978240967
+2022-11-09T17:37:36.920664381Z FO:  6.0
+2022-11-09T17:37:36.920670146Z TOTAL TIME: 1.2365272045135498
+2022-11-09T17:37:36.920675268Z Call optimal optimization
+2022-11-09T17:37:36.920680649Z Optimization start
+2022-11-09T17:37:36.920686187Z Running...
+2022-11-09T17:37:36.920698736Z -----------------------------------------------------------------------------------------------------------
+2022-11-09T17:37:38.290726754Z 10.233.90.70 - - [09/Nov/2022 17:37:38] "GET /optimizer-optimal HTTP/1.1" 200 -

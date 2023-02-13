@@ -1,0 +1,261 @@
+2022-11-08T03:52:46.793663977Z Deployer started
+2022-11-08T03:52:46.794179097Z  * Serving Flask app 'deployer-fake'
+2022-11-08T03:52:46.794195652Z  * Debug mode: on
+2022-11-08T03:52:46.803463955Z [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2022-11-08T03:52:46.803507068Z  * Running on all addresses (0.0.0.0)
+2022-11-08T03:52:46.803515518Z  * Running on http://127.0.0.1:5000
+2022-11-08T03:52:46.803520757Z  * Running on http://10.233.90.116:5000
+2022-11-08T03:52:46.803525966Z [33mPress CTRL+C to quit[0m
+2022-11-08T03:52:46.804602913Z  * Restarting with stat
+2022-11-08T03:52:47.575869391Z Deployer started
+2022-11-08T03:52:47.590710631Z  * Debugger is active!
+2022-11-08T03:52:47.590722747Z  * Debugger PIN: 324-039-363
+2022-11-08T03:57:41.844316496Z {'alerts': [{'annotations': {},
+2022-11-08T03:57:41.844400462Z              'endsAt': '0001-01-01T00:00:00Z',
+2022-11-08T03:57:41.844411553Z              'fingerprint': 'ab79f52020026627',
+2022-11-08T03:57:41.844596838Z              'generatorURL': 'http://r4-infrastructure-prometheus-server-7d8b95b77d-ctl64:9090/graph?g0.expr=%28sum+by%28container%2C+instance%2C+name%29+%28rate%28container_cpu_usage_seconds_total%7Bcontainer%3D~%22.%2Axapp%22%7D%5B5m%5D%29%29+%2A+100%29+%3E+80&g0.tab=1',
+2022-11-08T03:57:41.845535381Z              'labels': {'alertname': 'HighRICControlLoopLatency',
+2022-11-08T03:57:41.845547638Z                         'container': 'bouncer-xapp',
+2022-11-08T03:57:41.845554076Z                         'instance': 'node1',
+2022-11-08T03:57:41.845560085Z                         'name': '999929334cb4b39ea76c670a57e1244650a791ac0da8e91a4caaab2cfd1979de',
+2022-11-08T03:57:41.845565690Z                         'severity': 'warning'},
+2022-11-08T03:57:41.845591070Z              'startsAt': '2022-07-21T01:26:00.759957456Z',
+2022-11-08T03:57:41.845598364Z              'status': 'firing'},
+2022-11-08T03:57:41.845613231Z             {'annotations': {},
+2022-11-08T03:57:41.845632752Z              'endsAt': '0001-01-01T00:00:00Z',
+2022-11-08T03:57:41.845645870Z              'fingerprint': 'fb3c8fd0de8fe456',
+2022-11-08T03:57:41.845766581Z              'generatorURL': 'http://r4-infrastructure-prometheus-server-7d8b95b77d-ctl64:9090/graph?g0.expr=%28sum+by%28container%2C+instance%2C+name%29+%28rate%28container_cpu_usage_seconds_total%7Bcontainer%3D~%22.%2Axapp%22%7D%5B5m%5D%29%29+%2A+100%29+%3E+80&g0.tab=1',
+2022-11-08T03:57:41.845777702Z              'labels': {'alertname': 'ContainerCpuUsage',
+2022-11-08T03:57:41.845794559Z                         'container': 'bouncer-xapp',
+2022-11-08T03:57:41.845808851Z                         'instance': 'node5',
+2022-11-08T03:57:41.845937307Z                         'name': 'a16bae2b44d0418b697b049027fc8947e24766e7f23f8e9fc4352fe79c7e80fa',
+2022-11-08T03:57:41.845952146Z                         'severity': 'warning'},
+2022-11-08T03:57:41.845958328Z              'startsAt': '2022-07-21T01:25:00.759957456Z',
+2022-11-08T03:57:41.845971955Z              'status': 'firing'}],
+2022-11-08T03:57:41.846015150Z  'commonAnnotations': {},
+2022-11-08T03:57:41.846097626Z  'commonLabels': {'alertname': 'ContainerCpuUsage',
+2022-11-08T03:57:41.846128489Z                   'container': 'bouncer-xapp',
+2022-11-08T03:57:41.846154071Z                   'severity': 'warning'},
+2022-11-08T03:57:41.846161286Z  'externalURL': 'http://localhost:9093',
+2022-11-08T03:57:41.846174966Z  'groupKey': '{}/{}:{}',
+2022-11-08T03:57:41.846195323Z  'groupLabels': {},
+2022-11-08T03:57:41.846215020Z  'receiver': 'vespa',
+2022-11-08T03:57:41.846234578Z  'status': 'firing',
+2022-11-08T03:57:41.846271458Z  'version': '4'}
+2022-11-08T03:57:41.846330655Z Trigger activated, calling optimization solution
+2022-11-08T03:57:42.383099388Z Release "opt1-e2sim-node5" does not exist. Installing it now.
+2022-11-08T03:57:42.754039375Z NAME: opt1-e2sim-node5
+2022-11-08T03:57:42.754062760Z LAST DEPLOYED: Tue Nov  8 03:57:42 2022
+2022-11-08T03:57:42.754202797Z NAMESPACE: ricplt
+2022-11-08T03:57:42.754217287Z STATUS: deployed
+2022-11-08T03:57:42.754290874Z REVISION: 1
+2022-11-08T03:57:42.754298257Z NOTES:
+2022-11-08T03:57:42.754304499Z 1. Get the application URL by running these commands:
+2022-11-08T03:57:42.754446007Z   export POD_NAME=$(kubectl get pods --namespace ricplt -l "app.kubernetes.io/name=e2sim-helm,app.kubernetes.io/instance=opt1-e2sim-node5" -o jsonpath="{.items[0].metadata.name}")
+2022-11-08T03:57:42.754784925Z   export CONTAINER_PORT=$(kubectl get pod --namespace ricplt $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+2022-11-08T03:57:42.754792514Z   echo "Visit http://127.0.0.1:8080 to use your application"
+2022-11-08T03:57:42.754804489Z   kubectl --namespace ricplt port-forward $POD_NAME 8080:$CONTAINER_PORT
+2022-11-08T03:57:42.854792425Z Release "opt1-e2sim-node4" does not exist. Installing it now.
+2022-11-08T03:57:43.193801945Z NAME: opt1-e2sim-node4
+2022-11-08T03:57:43.193866208Z LAST DEPLOYED: Tue Nov  8 03:57:42 2022
+2022-11-08T03:57:43.193924735Z NAMESPACE: ricplt
+2022-11-08T03:57:43.193978066Z STATUS: deployed
+2022-11-08T03:57:43.194031511Z REVISION: 1
+2022-11-08T03:57:43.194101340Z NOTES:
+2022-11-08T03:57:43.194112173Z 1. Get the application URL by running these commands:
+2022-11-08T03:57:43.194119196Z   export POD_NAME=$(kubectl get pods --namespace ricplt -l "app.kubernetes.io/name=e2sim-helm,app.kubernetes.io/instance=opt1-e2sim-node4" -o jsonpath="{.items[0].metadata.name}")
+2022-11-08T03:57:43.194125402Z   export CONTAINER_PORT=$(kubectl get pod --namespace ricplt $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+2022-11-08T03:57:43.194130987Z   echo "Visit http://127.0.0.1:8080 to use your application"
+2022-11-08T03:57:43.194137180Z   kubectl --namespace ricplt port-forward $POD_NAME 8080:$CONTAINER_PORT
+2022-11-08T03:57:43.299825794Z Release "opt1-e2sim-node2" does not exist. Installing it now.
+2022-11-08T03:57:43.703289842Z NAME: opt1-e2sim-node2
+2022-11-08T03:57:43.703320009Z LAST DEPLOYED: Tue Nov  8 03:57:43 2022
+2022-11-08T03:57:43.703327734Z NAMESPACE: ricplt
+2022-11-08T03:57:43.703333910Z STATUS: deployed
+2022-11-08T03:57:43.703339601Z REVISION: 1
+2022-11-08T03:57:43.703345158Z NOTES:
+2022-11-08T03:57:43.703351057Z 1. Get the application URL by running these commands:
+2022-11-08T03:57:43.703357233Z   export POD_NAME=$(kubectl get pods --namespace ricplt -l "app.kubernetes.io/name=e2sim-helm,app.kubernetes.io/instance=opt1-e2sim-node2" -o jsonpath="{.items[0].metadata.name}")
+2022-11-08T03:57:43.703363628Z   export CONTAINER_PORT=$(kubectl get pod --namespace ricplt $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+2022-11-08T03:57:43.703369374Z   echo "Visit http://127.0.0.1:8080 to use your application"
+2022-11-08T03:57:43.703375455Z   kubectl --namespace ricplt port-forward $POD_NAME 8080:$CONTAINER_PORT
+2022-11-08T03:57:43.807309930Z Release "opt1-e2sim-node3" does not exist. Installing it now.
+2022-11-08T03:57:44.178152411Z NAME: opt1-e2sim-node3
+2022-11-08T03:57:44.178193562Z LAST DEPLOYED: Tue Nov  8 03:57:43 2022
+2022-11-08T03:57:44.178240840Z NAMESPACE: ricplt
+2022-11-08T03:57:44.178293091Z STATUS: deployed
+2022-11-08T03:57:44.178314059Z REVISION: 1
+2022-11-08T03:57:44.178357095Z NOTES:
+2022-11-08T03:57:44.178379972Z 1. Get the application URL by running these commands:
+2022-11-08T03:57:44.178405173Z   export POD_NAME=$(kubectl get pods --namespace ricplt -l "app.kubernetes.io/name=e2sim-helm,app.kubernetes.io/instance=opt1-e2sim-node3" -o jsonpath="{.items[0].metadata.name}")
+2022-11-08T03:57:44.178422662Z   export CONTAINER_PORT=$(kubectl get pod --namespace ricplt $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+2022-11-08T03:57:44.178429518Z   echo "Visit http://127.0.0.1:8080 to use your application"
+2022-11-08T03:57:44.178436739Z   kubectl --namespace ricplt port-forward $POD_NAME 8080:$CONTAINER_PORT
+2022-11-08T03:57:44.719409715Z Release "opt2-e2sim-node5" does not exist. Installing it now.
+2022-11-08T03:57:45.081525725Z NAME: opt2-e2sim-node5
+2022-11-08T03:57:45.081549371Z LAST DEPLOYED: Tue Nov  8 03:57:44 2022
+2022-11-08T03:57:45.081575252Z NAMESPACE: ricplt
+2022-11-08T03:57:45.081582238Z STATUS: deployed
+2022-11-08T03:57:45.081588884Z REVISION: 1
+2022-11-08T03:57:45.081594556Z NOTES:
+2022-11-08T03:57:45.081600383Z 1. Get the application URL by running these commands:
+2022-11-08T03:57:45.081606898Z   export POD_NAME=$(kubectl get pods --namespace ricplt -l "app.kubernetes.io/name=e2sim-helm,app.kubernetes.io/instance=opt2-e2sim-node5" -o jsonpath="{.items[0].metadata.name}")
+2022-11-08T03:57:45.081615884Z   export CONTAINER_PORT=$(kubectl get pod --namespace ricplt $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+2022-11-08T03:57:45.081622646Z   echo "Visit http://127.0.0.1:8080 to use your application"
+2022-11-08T03:57:45.081628455Z   kubectl --namespace ricplt port-forward $POD_NAME 8080:$CONTAINER_PORT
+2022-11-08T03:57:45.170795682Z Release "opt2-e2sim-node4" does not exist. Installing it now.
+2022-11-08T03:57:45.575378963Z NAME: opt2-e2sim-node4
+2022-11-08T03:57:45.575438912Z LAST DEPLOYED: Tue Nov  8 03:57:45 2022
+2022-11-08T03:57:45.575776732Z NAMESPACE: ricplt
+2022-11-08T03:57:45.575788371Z STATUS: deployed
+2022-11-08T03:57:45.575794867Z REVISION: 1
+2022-11-08T03:57:45.575800686Z NOTES:
+2022-11-08T03:57:45.575806881Z 1. Get the application URL by running these commands:
+2022-11-08T03:57:45.575851460Z   export POD_NAME=$(kubectl get pods --namespace ricplt -l "app.kubernetes.io/name=e2sim-helm,app.kubernetes.io/instance=opt2-e2sim-node4" -o jsonpath="{.items[0].metadata.name}")
+2022-11-08T03:57:45.575860785Z   export CONTAINER_PORT=$(kubectl get pod --namespace ricplt $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+2022-11-08T03:57:45.575867083Z   echo "Visit http://127.0.0.1:8080 to use your application"
+2022-11-08T03:57:45.575873027Z   kubectl --namespace ricplt port-forward $POD_NAME 8080:$CONTAINER_PORT
+2022-11-08T03:57:45.679339715Z Release "opt2-e2sim-node2" does not exist. Installing it now.
+2022-11-08T03:57:46.040435819Z NAME: opt2-e2sim-node2
+2022-11-08T03:57:46.040461621Z LAST DEPLOYED: Tue Nov  8 03:57:45 2022
+2022-11-08T03:57:46.040488986Z NAMESPACE: ricplt
+2022-11-08T03:57:46.040496284Z STATUS: deployed
+2022-11-08T03:57:46.040502719Z REVISION: 1
+2022-11-08T03:57:46.040508430Z NOTES:
+2022-11-08T03:57:46.040515147Z 1. Get the application URL by running these commands:
+2022-11-08T03:57:46.040521401Z   export POD_NAME=$(kubectl get pods --namespace ricplt -l "app.kubernetes.io/name=e2sim-helm,app.kubernetes.io/instance=opt2-e2sim-node2" -o jsonpath="{.items[0].metadata.name}")
+2022-11-08T03:57:46.040527560Z   export CONTAINER_PORT=$(kubectl get pod --namespace ricplt $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+2022-11-08T03:57:46.040533313Z   echo "Visit http://127.0.0.1:8080 to use your application"
+2022-11-08T03:57:46.040539349Z   kubectl --namespace ricplt port-forward $POD_NAME 8080:$CONTAINER_PORT
+2022-11-08T03:57:46.179306224Z Release "opt2-e2sim-node3" does not exist. Installing it now.
+2022-11-08T03:57:46.581783829Z NAME: opt2-e2sim-node3
+2022-11-08T03:57:46.581817876Z LAST DEPLOYED: Tue Nov  8 03:57:46 2022
+2022-11-08T03:57:46.582340102Z NAMESPACE: ricplt
+2022-11-08T03:57:46.582357012Z STATUS: deployed
+2022-11-08T03:57:46.582491129Z REVISION: 1
+2022-11-08T03:57:46.582498505Z NOTES:
+2022-11-08T03:57:46.582504639Z 1. Get the application URL by running these commands:
+2022-11-08T03:57:46.582510956Z   export POD_NAME=$(kubectl get pods --namespace ricplt -l "app.kubernetes.io/name=e2sim-helm,app.kubernetes.io/instance=opt2-e2sim-node3" -o jsonpath="{.items[0].metadata.name}")
+2022-11-08T03:57:46.582517046Z   export CONTAINER_PORT=$(kubectl get pod --namespace ricplt $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+2022-11-08T03:57:46.582522705Z   echo "Visit http://127.0.0.1:8080 to use your application"
+2022-11-08T03:57:46.582528578Z   kubectl --namespace ricplt port-forward $POD_NAME 8080:$CONTAINER_PORT
+2022-11-08T03:58:01.671853504Z Release "opt1-xapp1-node5-e25" does not exist. Installing it now.
+2022-11-08T03:58:02.063178813Z NAME: opt1-xapp1-node5-e25
+2022-11-08T03:58:02.063228887Z LAST DEPLOYED: Tue Nov  8 03:58:01 2022
+2022-11-08T03:58:02.063250393Z NAMESPACE: ricxapp
+2022-11-08T03:58:02.063258061Z STATUS: deployed
+2022-11-08T03:58:02.063272388Z REVISION: 1
+2022-11-08T03:58:02.063278834Z TEST SUITE: None
+2022-11-08T03:58:02.146021933Z Release "opt1-xapp1-node2-e22" does not exist. Installing it now.
+2022-11-08T03:58:02.590425425Z NAME: opt1-xapp1-node2-e22
+2022-11-08T03:58:02.591221695Z LAST DEPLOYED: Tue Nov  8 03:58:02 2022
+2022-11-08T03:58:02.591296649Z NAMESPACE: ricxapp
+2022-11-08T03:58:02.591307599Z STATUS: deployed
+2022-11-08T03:58:02.591314509Z REVISION: 1
+2022-11-08T03:58:02.591320557Z TEST SUITE: None
+2022-11-08T03:58:02.709929175Z Release "opt1-xapp1-node3-e23" does not exist. Installing it now.
+2022-11-08T03:58:03.151214800Z NAME: opt1-xapp1-node3-e23
+2022-11-08T03:58:03.151248600Z LAST DEPLOYED: Tue Nov  8 03:58:02 2022
+2022-11-08T03:58:03.151256424Z NAMESPACE: ricxapp
+2022-11-08T03:58:03.151263012Z STATUS: deployed
+2022-11-08T03:58:03.151268670Z REVISION: 1
+2022-11-08T03:58:03.151274349Z TEST SUITE: None
+2022-11-08T03:58:03.243128909Z Release "opt1-xapp1-node4-e24" does not exist. Installing it now.
+2022-11-08T03:58:03.731450980Z NAME: opt1-xapp1-node4-e24
+2022-11-08T03:58:03.731498700Z LAST DEPLOYED: Tue Nov  8 03:58:03 2022
+2022-11-08T03:58:03.731507674Z NAMESPACE: ricxapp
+2022-11-08T03:58:03.731513902Z STATUS: deployed
+2022-11-08T03:58:03.731519649Z REVISION: 1
+2022-11-08T03:58:03.731539579Z TEST SUITE: None
+2022-11-08T03:58:13.972152718Z RIC optimization complete
+2022-11-08T03:58:13.973111845Z 10.43.0.220 - - [08/Nov/2022 03:58:13] "POST /alert HTTP/1.1" 200 -
+2022-11-08T03:59:24.783684804Z {'alerts': [{'annotations': {},
+2022-11-08T03:59:24.783731679Z              'endsAt': '0001-01-01T00:00:00Z',
+2022-11-08T03:59:24.783740376Z              'fingerprint': 'ae85bfc03aba5423',
+2022-11-08T03:59:24.783812637Z              'generatorURL': 'http://r4-infrastructure-prometheus-server-5b6c9fd9c4-5nljn:9090/graph?g0.expr=%28sum_over_time%28count+by%28SIM_ID%29+%28rc_control_loop_latency_seconds+%3E+0.01%29%5B10s%3A%5D%29%29+%3E+5&g0.tab=1',
+2022-11-08T03:59:24.783845295Z              'labels': {'SIM_ID': '5',
+2022-11-08T03:59:24.783870118Z                         'alertname': 'HighRICControlLoopLatency',
+2022-11-08T03:59:24.783901348Z                         'severity': 'critical'},
+2022-11-08T03:59:24.783920151Z              'startsAt': '2022-11-08T03:59:23.759957456Z',
+2022-11-08T03:59:24.783947187Z              'status': 'firing'}],
+2022-11-08T03:59:24.783975584Z  'commonAnnotations': {},
+2022-11-08T03:59:24.784046121Z  'commonLabels': {'SIM_ID': '5',
+2022-11-08T03:59:24.784068413Z                   'alertname': 'HighRICControlLoopLatency',
+2022-11-08T03:59:24.784100979Z                   'severity': 'critical'},
+2022-11-08T03:59:24.784148434Z  'externalURL': 'http://localhost:9093',
+2022-11-08T03:59:24.784164859Z  'groupKey': '{}/{}:{alertname="HighRICControlLoopLatency", '
+2022-11-08T03:59:24.784178097Z              'severity="critical"}',
+2022-11-08T03:59:24.784245869Z  'groupLabels': {'alertname': 'HighRICControlLoopLatency',
+2022-11-08T03:59:24.784263005Z                  'severity': 'critical'},
+2022-11-08T03:59:24.784369771Z  'receiver': 'vespa',
+2022-11-08T03:59:24.784380650Z  'status': 'firing',
+2022-11-08T03:59:24.784405686Z  'version': '4'}
+2022-11-08T03:59:24.784489856Z Trigger activated, calling optimization solution
+2022-11-08T03:59:24.862115108Z Release "opt2-xapp1-node5-e25" does not exist. Installing it now.
+2022-11-08T03:59:25.270694846Z NAME: opt2-xapp1-node5-e25
+2022-11-08T03:59:25.270727005Z LAST DEPLOYED: Tue Nov  8 03:59:24 2022
+2022-11-08T03:59:25.270735187Z NAMESPACE: ricxapp
+2022-11-08T03:59:25.270741576Z STATUS: deployed
+2022-11-08T03:59:25.270747148Z REVISION: 1
+2022-11-08T03:59:25.270753585Z TEST SUITE: None
+2022-11-08T03:59:25.408682979Z Release "opt2-xapp1-node2-e22" does not exist. Installing it now.
+2022-11-08T03:59:25.907599500Z NAME: opt2-xapp1-node2-e22
+2022-11-08T03:59:25.908919177Z LAST DEPLOYED: Tue Nov  8 03:59:25 2022
+2022-11-08T03:59:25.908975558Z NAMESPACE: ricxapp
+2022-11-08T03:59:25.908984903Z STATUS: deployed
+2022-11-08T03:59:25.908991670Z REVISION: 1
+2022-11-08T03:59:25.909033213Z TEST SUITE: None
+2022-11-08T03:59:25.994246308Z Release "opt2-xapp1-node3-e23" does not exist. Installing it now.
+2022-11-08T03:59:26.462257466Z NAME: opt2-xapp1-node3-e23
+2022-11-08T03:59:26.462291829Z LAST DEPLOYED: Tue Nov  8 03:59:26 2022
+2022-11-08T03:59:26.462300120Z NAMESPACE: ricxapp
+2022-11-08T03:59:26.462306398Z STATUS: deployed
+2022-11-08T03:59:26.462312178Z REVISION: 1
+2022-11-08T03:59:26.462318125Z TEST SUITE: None
+2022-11-08T03:59:26.606170973Z Release "opt2-xapp1-node4-e24" does not exist. Installing it now.
+2022-11-08T03:59:27.086884177Z NAME: opt2-xapp1-node4-e24
+2022-11-08T03:59:27.086920397Z LAST DEPLOYED: Tue Nov  8 03:59:26 2022
+2022-11-08T03:59:27.086928476Z NAMESPACE: ricxapp
+2022-11-08T03:59:27.086934597Z STATUS: deployed
+2022-11-08T03:59:27.086940244Z REVISION: 1
+2022-11-08T03:59:27.086945875Z TEST SUITE: None
+2022-11-08T03:59:37.420756540Z Error: uninstall: Release not loaded: opt1-e2sim-node2: release: not found
+2022-11-08T03:59:37.478723827Z Error: uninstall: Release not loaded: opt1-e2sim-node3: release: not found
+2022-11-08T03:59:37.556464445Z Error: uninstall: Release not loaded: opt1-e2sim-node4: release: not found
+2022-11-08T03:59:37.618578518Z Error: uninstall: Release not loaded: opt1-e2sim-node5: release: not found
+2022-11-08T03:59:37.925604183Z release "opt1-xapp1-node2-e22" uninstalled
+2022-11-08T03:59:38.244417665Z release "opt1-xapp1-node3-e23" uninstalled
+2022-11-08T03:59:38.613987328Z release "opt1-xapp1-node4-e24" uninstalled
+2022-11-08T03:59:38.946905282Z release "opt1-xapp1-node5-e25" uninstalled
+2022-11-08T03:59:39.200882300Z release "opt1-e2sim-node2" uninstalled
+2022-11-08T03:59:39.457197854Z release "opt1-e2sim-node3" uninstalled
+2022-11-08T03:59:39.765740405Z release "opt1-e2sim-node4" uninstalled
+2022-11-08T03:59:40.070298895Z release "opt1-e2sim-node5" uninstalled
+2022-11-08T03:59:40.169136913Z Error: uninstall: Release not loaded: opt1-xapp1-node2-e22: release: not found
+2022-11-08T03:59:40.245755986Z Error: uninstall: Release not loaded: opt1-xapp1-node3-e23: release: not found
+2022-11-08T03:59:40.330589531Z Error: uninstall: Release not loaded: opt1-xapp1-node4-e24: release: not found
+2022-11-08T03:59:40.413805241Z Error: uninstall: Release not loaded: opt1-xapp1-node5-e25: release: not found
+2022-11-08T03:59:40.416475396Z RIC optimization complete
+2022-11-08T03:59:40.417582857Z 10.233.90.160 - - [08/Nov/2022 03:59:40] "POST /alert HTTP/1.1" 200 -
+2022-11-08T04:00:24.782773751Z {'alerts': [{'annotations': {},
+2022-11-08T04:00:24.782812793Z              'endsAt': '2022-11-08T03:59:46.759957456Z',
+2022-11-08T04:00:24.782822065Z              'fingerprint': 'ae85bfc03aba5423',
+2022-11-08T04:00:24.782883780Z              'generatorURL': 'http://r4-infrastructure-prometheus-server-5b6c9fd9c4-5nljn:9090/graph?g0.expr=%28sum_over_time%28count+by%28SIM_ID%29+%28rc_control_loop_latency_seconds+%3E+0.01%29%5B10s%3A%5D%29%29+%3E+5&g0.tab=1',
+2022-11-08T04:00:24.782965553Z              'labels': {'SIM_ID': '5',
+2022-11-08T04:00:24.783006254Z                         'alertname': 'HighRICControlLoopLatency',
+2022-11-08T04:00:24.783034778Z                         'severity': 'critical'},
+2022-11-08T04:00:24.783042368Z              'startsAt': '2022-11-08T03:59:23.759957456Z',
+2022-11-08T04:00:24.783064864Z              'status': 'resolved'}],
+2022-11-08T04:00:24.783078461Z  'commonAnnotations': {},
+2022-11-08T04:00:24.783203291Z  'commonLabels': {'SIM_ID': '5',
+2022-11-08T04:00:24.783249127Z                   'alertname': 'HighRICControlLoopLatency',
+2022-11-08T04:00:24.783261291Z                   'severity': 'critical'},
+2022-11-08T04:00:24.783276092Z  'externalURL': 'http://localhost:9093',
+2022-11-08T04:00:24.783289872Z  'groupKey': '{}/{}:{alertname="HighRICControlLoopLatency", '
+2022-11-08T04:00:24.783296318Z              'severity="critical"}',
+2022-11-08T04:00:24.783534180Z  'groupLabels': {'alertname': 'HighRICControlLoopLatency',
+2022-11-08T04:00:24.783545043Z                  'severity': 'critical'},
+2022-11-08T04:00:24.783552706Z  'receiver': 'vespa',
+2022-11-08T04:00:24.783558806Z  'status': 'resolved',
+2022-11-08T04:00:24.783565926Z  'version': '4'}
+2022-11-08T04:00:24.783964190Z 10.233.90.160 - - [08/Nov/2022 04:00:24] "POST /alert HTTP/1.1" 200 -

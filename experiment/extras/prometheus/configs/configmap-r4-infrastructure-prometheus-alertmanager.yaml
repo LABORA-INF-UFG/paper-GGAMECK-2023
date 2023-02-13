@@ -1,0 +1,40 @@
+apiVersion: v1
+data:
+  alertmanager.yml: |
+    global:
+      resolve_timeout: 5m
+    receivers:
+    - name: vespa
+      webhook_configs:
+      - url: http://service-ricplt-vespamgr-http:9095/alerts
+      - url: http://service-deployer.ricinfra.svc.cluster.local/alert
+    route:
+      group_by:
+      - alertname
+      - severity
+      - instance
+      - job
+      group_interval: 3m
+      group_wait: 5s
+      receiver: vespa
+      repeat_interval: 1h
+      routes:
+      - continue: true
+        receiver: vespa
+kind: ConfigMap
+metadata:
+  annotations:
+    meta.helm.sh/release-name: r4-infrastructure
+    meta.helm.sh/release-namespace: ricplt
+  creationTimestamp: "2022-09-15T15:51:54Z"
+  labels:
+    app: prometheus
+    app.kubernetes.io/managed-by: Helm
+    chart: prometheus-11.3.0
+    component: alertmanager
+    heritage: Helm
+    release: r4-infrastructure
+  name: r4-infrastructure-prometheus-alertmanager
+  namespace: ricplt
+  resourceVersion: "21988757"
+  uid: 8fbb8515-c409-4c99-9d62-997f270a06ce

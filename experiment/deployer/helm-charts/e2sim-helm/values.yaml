@@ -1,0 +1,23 @@
+affinity: {}
+fullnameOverride: ''
+image:
+  args:
+    e2term: 10.233.96.75
+    gNB: 203
+    id: 3
+  command: e2sim-rc
+  pullPolicy: IfNotPresent
+  repository: zanattabruno/e2sim-rc
+  tag: ''
+nameOverride: ''
+nodeSelector:
+  kubernetes.io/hostname: node3
+podAnnotations: {}
+podSecurityContext: {}
+replicaCount: 1
+resources: {}
+service:
+  port: 8080
+  tls: []
+  type: ClusterIP
+tolerations: []

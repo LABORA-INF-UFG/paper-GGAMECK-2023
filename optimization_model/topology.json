@@ -1,0 +1,183 @@
+{
+  "links": [
+    {
+      "link": "(0, 1)",
+      "delay": 4
+    },
+    {
+      "link": "(0, 2)",
+      "delay": 4
+    },
+    {
+      "link": "(0, 3)",
+      "delay": 5.5
+    },
+    {
+      "link": "(0, 4)",
+      "delay": 5.5
+    },
+    {
+      "link": "(0, 5)",
+      "delay": 6.5
+    },
+    {
+      "link": "(0, 6)",
+      "delay": 6.5
+    },
+    {
+      "link": "(0, 7)",
+      "delay": 6.5
+    },
+    {
+      "link": "(0, 8)",
+      "delay": 6.5
+    },
+    {
+      "link": "(1, 2)",
+      "delay": 1.5
+    },
+    {
+      "link": "(1, 3)",
+      "delay": 1.5
+    },
+    {
+      "link": "(1, 4)",
+      "delay": 1.5
+    },
+    {
+      "link": "(1, 5)",
+      "delay": 1.5
+    },
+    {
+      "link": "(1, 6)",
+      "delay": 1.5
+    },
+    {
+      "link": "(2, 3)",
+      "delay": 1.5
+    },
+    {
+      "link": "(2, 4)",
+      "delay": 1.5
+    },
+    {
+      "link": "(2, 5)",
+      "delay": 1.5
+    },
+    {
+      "link": "(2, 6)",
+      "delay": 1.5
+    },
+    {
+      "link": "(3, 4)",
+      "delay": 1.5
+    },
+    {
+      "link": "(3, 5)",
+      "delay": 1.5
+    },
+    {
+      "link": "(3, 6)",
+      "delay": 1.5
+    },
+    {
+      "link": "(4, 5)",
+      "delay": 1.5
+    },
+    {
+      "link": "(4, 6)",
+      "delay": 1.5
+    }
+  ],
+  "CRs": [
+    {
+      "id": 0,
+      "cpu": 2000,
+      "storage": 2000,
+      "fixed_cost": 0,
+      "RIC_cost": 4,
+      "E2_cost": 4,
+      "SDL_cost": 2,
+      "DB_cost": 2,
+      "xApp_cost": 1
+    },
+    {
+      "id": 1,
+      "cpu": 16,
+      "storage": 256,
+      "fixed_cost": 10,
+      "RIC_cost": 4,
+      "E2_cost": 4,
+      "SDL_cost":2,
+      "DB_cost": 2,
+      "xApp_cost": 1
+    },
+    {
+      "id": 2,
+      "cpu": 16,
+      "storage": 256,
+      "fixed_cost": 10,
+      "RIC_cost": 4,
+      "E2_cost": 4,
+      "SDL_cost": 2,
+      "DB_cost": 2,
+      "xApp_cost": 1
+    },
+    {
+      "id": 3,
+      "cpu": 16,
+      "storage": 256,
+      "fixed_cost": 20,
+      "RIC_cost": 8,
+      "E2_cost": 8,
+      "SDL_cost": 4,
+      "DB_cost": 4,
+      "xApp_cost": 2
+    },
+    {
+      "id": 4,
+      "cpu": 16,
+      "storage": 256,
+      "fixed_cost": 20,
+      "RIC_cost": 8,
+      "E2_cost": 8,
+      "SDL_cost": 4,
+      "DB_cost": 4,
+      "xApp_cost": 2
+    },
+    {
+      "id": 5,
+      "cpu": 0,
+      "storage": 0,
+      "fixed_cost": 0,
+      "RIC_cost": 0,
+      "E2_cost": 0,
+      "SDL_cost": 0,
+      "DB_cost": 0,
+      "xApp_cost": 0
+    },
+    {
+      "id": 6,
+      "cpu": 0,
+      "storage": 0,
+      "fixed_cost": 0,
+      "RIC_cost": 0,
+      "E2_cost": 0,
+      "SDL_cost": 0,
+      "DB_cost": 0,
+      "xApp_cost": 0
+    }
+  ],
+  "DUs": [
+    {
+      "id": 1,
+      "CR": 5,
+      "closest_CR": 3
+    },
+    {
+      "id": 2,
+      "CR": 6,
+      "closest_CR": 4
+    }
+  ]
+}

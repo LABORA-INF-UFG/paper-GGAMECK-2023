@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-optimizer
+  namespace: ricinfra
+  labels:
+    app: optimizer
+spec:
+  selector:
+    matchLabels:
+      app: optimizer
+  template:
+    metadata:
+      labels:
+        app: optimizer
+    spec:
+      containers:
+      - name: optimizer
+        image: zanattabruno/optimizer
+        ports:
+        - containerPort: 5000
+          name: flask-default
+        command: ["python3"]
+        args: ["optimizer.py"]
+        imagePullPolicy: Always
+      nodeSelector:
+        kubernetes.io/hostname: node1

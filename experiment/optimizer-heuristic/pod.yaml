@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: optimizer-heuristic
+spec:
+  containers:
+  - name: optimizer-heuristic
+    image: zanattabruno/optimizer-heuristic
+    args:
+    - sleep
+    - "1000000"
+    imagePullPolicy: Always

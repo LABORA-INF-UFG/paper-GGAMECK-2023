@@ -1,0 +1,6 @@
+
+receivers:
+- name: vespa
+  webhook_configs:
+  #Add the webhook url in alert manager config
+  - url: https://97b2-201-49-165-204.sa.ngrok.io/alert

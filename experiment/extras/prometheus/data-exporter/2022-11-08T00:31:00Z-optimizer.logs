@@ -1,0 +1,59 @@
+2022-11-08T00:28:39.871407618Z  * Serving Flask app "optimizer" (lazy loading)
+2022-11-08T00:28:39.871465567Z  * Environment: production
+2022-11-08T00:28:39.871566938Z    WARNING: This is a development server. Do not use it in a production deployment.
+2022-11-08T00:28:39.871750938Z    Use a production WSGI server instead.
+2022-11-08T00:28:39.871897625Z  * Debug mode: on
+2022-11-08T00:28:39.893938688Z /usr/local/lib/python3.6/site-packages/pandas/compat/__init__.py:120: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+2022-11-08T00:28:39.893964214Z   warnings.warn(msg)
+2022-11-08T00:28:39.893970720Z  * Running on all addresses.
+2022-11-08T00:28:39.893976170Z    WARNING: This is a development server. Do not use it in a production deployment.
+2022-11-08T00:28:39.894622792Z  * Running on http://10.233.90.253:5000/ (Press CTRL+C to quit)
+2022-11-08T00:28:39.898089959Z  * Restarting with stat
+2022-11-08T00:28:41.511279319Z /usr/local/lib/python3.6/site-packages/pandas/compat/__init__.py:120: UserWarning: Could not import the lzma module. Your installed Python is incomplete. Attempting to use lzma compression will result in a RuntimeError.
+2022-11-08T00:28:41.511315549Z   warnings.warn(msg)
+2022-11-08T00:28:41.511321534Z  * Debugger is active!
+2022-11-08T00:28:41.522417137Z  * Debugger PIN: 934-987-667
+2022-11-08T00:29:54.522716008Z Call optimal optimization
+2022-11-08T00:29:54.522748685Z Optimization start
+2022-11-08T00:29:54.522755139Z Running...
+2022-11-08T00:29:54.522760602Z -----------------------------------------------------------------------------------------------------------
+2022-11-08T00:29:55.370600708Z 10.233.90.14 - - [08/Nov/2022 00:29:55] "GET /optimizer-optimal HTTP/1.1" 200 -
+2022-11-08T00:33:38.851892447Z /usr/local/lib/python3.6/site-packages/werkzeug/filesystem.py:51: BrokenFilesystemWarning: Detected a misconfigured UNIX filesystem: Will use UTF-8 as filesystem encoding instead of 'ascii'
+2022-11-08T00:33:38.851927379Z   BrokenFilesystemWarning,
+2022-11-08T00:33:38.851933890Z 10.233.90.14 - - [08/Nov/2022 00:33:38] "[35m[1mGET /optimizer-optimal HTTP/1.1[0m" 500 -
+2022-11-08T00:33:39.527474445Z Alocation Time: 0.44535160064697266
+2022-11-08T00:33:39.527508039Z Solver Enlapsed Time: 0.47173142433166504
+2022-11-08T00:33:39.527514093Z FO:  5.999999994496404
+2022-11-08T00:33:39.527519253Z TOTAL TIME: 0.9201662540435791
+2022-11-08T00:33:39.527524295Z Call optimal optimization
+2022-11-08T00:33:39.527529405Z Call optimal optimization
+2022-11-08T00:33:39.527534350Z Optimization start
+2022-11-08T00:33:39.527539790Z Running...
+2022-11-08T00:33:39.527545146Z -----------------------------------------------------------------------------------------------------------
+2022-11-08T00:33:39.528373177Z Traceback (most recent call last):
+2022-11-08T00:33:39.528387099Z   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+2022-11-08T00:33:39.528396448Z     return self.wsgi_app(environ, start_response)
+2022-11-08T00:33:39.528402426Z   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+2022-11-08T00:33:39.528407635Z     response = self.handle_exception(e)
+2022-11-08T00:33:39.528412725Z   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+2022-11-08T00:33:39.528417834Z     reraise(exc_type, exc_value, tb)
+2022-11-08T00:33:39.528423047Z   File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+2022-11-08T00:33:39.528428423Z     raise value
+2022-11-08T00:33:39.528433492Z   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+2022-11-08T00:33:39.528480593Z     response = self.full_dispatch_request()
+2022-11-08T00:33:39.528488089Z   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+2022-11-08T00:33:39.528493217Z     rv = self.handle_user_exception(e)
+2022-11-08T00:33:39.528498211Z   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+2022-11-08T00:33:39.528503119Z     reraise(exc_type, exc_value, tb)
+2022-11-08T00:33:39.528511211Z   File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+2022-11-08T00:33:39.528516625Z     raise value
+2022-11-08T00:33:39.528521767Z   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+2022-11-08T00:33:39.528527040Z     rv = self.dispatch_request()
+2022-11-08T00:33:39.528556635Z   File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+2022-11-08T00:33:39.528564213Z     return self.view_functions[rule.endpoint](**req.view_args)
+2022-11-08T00:33:39.528569597Z   File "/home/optimizer.py", line 21, in optimal_heuristic_optimization
+2022-11-08T00:33:39.528574884Z     generate_input()
+2022-11-08T00:33:39.528580149Z   File "/home/optimizer.py", line 111, in generate_input
+2022-11-08T00:33:39.528585101Z     "cpu": cpu,
+2022-11-08T00:33:39.528590218Z UnboundLocalError: local variable 'cpu' referenced before assignment
+2022-11-08T00:33:44.812922406Z 10.233.90.14 - - [08/Nov/2022 00:33:44] "GET /optimizer-optimal HTTP/1.1" 200 -
