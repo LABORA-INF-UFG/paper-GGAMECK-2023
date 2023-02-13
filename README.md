@@ -14,7 +14,7 @@ This work proposes the first exact model for positioning Near-Real-Time RAN Inte
 ## Topologies
 In our theorical evaluation we assume as RAN topology a next-generation hierarchical network with 512 E2 nodes organized in three main tiers, with different computing resources and costs. The table bellow represents the parameters used in this scenario:
 
-![image](https://user-images.githubusercontent.com/15385171/218473556-cbcf5b9a-df75-44a5-9df2-a16f6abd40ef.png =250x250)
+![image](https://user-images.githubusercontent.com/15385171/218473556-cbcf5b9a-df75-44a5-9df2-a16f6abd40ef.png)
 
 ## Analytical modeling
 
